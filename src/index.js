@@ -3,7 +3,11 @@ const { uuid, isUuid } = require("uuidv4");
 
 const app = express();
 
+const cors = require("cors");
+
 app.use(express.json());
+
+app.use(cors());
 
 const projects = [];
 
